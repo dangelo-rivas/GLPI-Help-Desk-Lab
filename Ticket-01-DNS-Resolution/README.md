@@ -121,22 +121,52 @@ After the configuration change:
 - Root cause analysis
 - Resolution verification
 
-## Screenshots
-
-Screenshots documenting the troubleshooting process will be included below.
+## Troubleshooting Evidence
 
 ### 1. GLPI Incident Ticket
 
-Shows the incident, troubleshooting notes, diagnosis, testing, and resolution documented in GLPI.
+The incident was tracked in GLPI with troubleshooting, diagnosis, testing, and resolution documented throughout the ticket lifecycle.
+
+![GLPI incident ticket](screenshots/01-glpi-ticket.png)
 
 ### 2. DNS Resolution Failure
 
-Initial `nslookup google.com` test showing the DNS request timing out.
+Running `nslookup google.com` resulted in DNS request timeouts, confirming that hostname resolution was failing.
 
-### 3. Successful IP Connectivity
+![DNS resolution failure](screenshots/02-dns-failure.png)
 
-Successful `ping 8.8.8.8` test demonstrating that external IP connectivity was operational despite the DNS failure.
+### 3. External IP Connectivity Verification
 
-### 4. Successful DNS Resolution
+I tested external connectivity using:
 
-Final `nslookup google.com` test demonstrating successful hostname resolution after correcting the DNS configuration.
+```cmd
+ping 8.8.8.8
+```
+
+The workstation received 4/4 replies with 0% packet loss. This demonstrated that internet connectivity was functional even though DNS resolution was failing.
+
+![Successful IP connectivity test](screenshots/03-ping-success.png)
+
+### 4. DNS Isolation Test
+
+I queried a known DNS server directly:
+
+```cmd
+nslookup google.com 8.8.8.8
+```
+
+The query completed successfully, further isolating the problem to the workstation's default DNS configuration.
+
+![Successful Google DNS test](screenshots/04-google-dns-test.png)
+
+### 5. Resolution Verification
+
+After correcting the DNS configuration and flushing the DNS resolver cache, I ran:
+
+```cmd
+nslookup google.com
+```
+
+The lookup completed successfully using `8.8.8.8`, confirming that hostname resolution had been restored.
+
+![Successful DNS resolution after fix](screenshots/05-dns-fixed.png)
