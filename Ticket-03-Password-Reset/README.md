@@ -15,9 +15,9 @@ A user reported being unable to sign in to workstation `ACME-PC-001`. Windows di
 
 ## Initial Assessment
 
-The login failure was reproduced using the affected standard user account. Windows rejected the supplied credentials and prevented the user from accessing the workstation.
+The user reported being unable to sign in to workstation `ACME-PC-001`. Windows displayed an incorrect password message when the user attempted to authenticate. The issue was documented in GLPI before troubleshooting began.
 
-![Login Failure](screenshots/01-login-failure.png)
+![GLPI Ticket](screenshots/01-glpi-ticket-created.png)
 
 ## Account Verification
 
