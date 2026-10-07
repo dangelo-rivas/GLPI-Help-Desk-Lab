@@ -37,6 +37,9 @@ ZimaOS
 - GLPI administration
 - Incident documentation
 - Troubleshooting methodology
+- Windows user account administration
+- Password reset and authentication troubleshooting
+- Least-privilege access management
 
 ## Help Desk Tickets
 
@@ -59,6 +62,16 @@ ZimaOS
 **Resolution:** Authorized and installed 7-Zip using the dedicated IT administrator account, verified the application launched successfully, and maintained the user's standard account permissions in accordance with least-privilege practices.
 
 [View Ticket 02 Documentation](Ticket-02-Application-Installation/README.md)
+
+### Ticket 03 - Windows Password Reset
+
+**Issue:** User was unable to sign in to workstation ACME-PC-001 due to an incorrect password.
+
+**Diagnosis:** Verified the local Windows user account was active, enabled, and not locked out. The issue was isolated to the user's authentication credentials.
+
+**Resolution:** Reset the user's password using an authorized IT administrator account and verified successful Windows authentication while maintaining the user's standard account permissions.
+
+[View Ticket 03 Documentation](Ticket-03-Password-Reset/README.md)
 
 ---
 
