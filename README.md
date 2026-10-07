@@ -73,6 +73,16 @@ ZimaOS
 
 [View Ticket 03 Documentation](Ticket-03-Password-Reset/README.md)
 
+### Ticket 04 - Shared Folder Access Failure
+
+**Issue:** User was unable to access a shared company folder due to insufficient NTFS permissions.
+
+**Diagnosis:** Investigated Windows share and NTFS permissions and identified missing access permissions for the affected standard user.
+
+**Resolution:** Restored appropriate read permissions, verified access to the shared folder, and confirmed the user could open company documents without administrative privileges.
+
+[View Ticket 04 Documentation](Ticket-04-Shared-Folder-Access/README.md)
+
 ---
 
 More troubleshooting scenarios will be added as the lab develops.
