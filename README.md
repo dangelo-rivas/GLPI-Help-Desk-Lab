@@ -50,6 +50,16 @@ ZimaOS
 
 [View Ticket 01 Documentation](Ticket-01-DNS-Resolution/README.md)
 
+### Ticket 02 - Application Installation & User Permissions
+
+**Issue:** User was unable to install 7-Zip because the standard Windows account did not have administrative privileges.
+
+**Diagnosis:** Reproduced the issue and verified that Windows User Account Control (UAC) required IT administrator credentials for the system-level installation.
+
+**Resolution:** Authorized and installed 7-Zip using the dedicated IT administrator account, verified the application launched successfully, and maintained the user's standard account permissions in accordance with least-privilege practices.
+
+[View Ticket 02 Documentation](Ticket-02-Application-Installation/README.md)
+
 ---
 
 More troubleshooting scenarios will be added as the lab develops.
