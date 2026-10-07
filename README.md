@@ -54,4 +54,4 @@ ZimaOS
 
 ---
 
-More troubleshooting scenarios will be added as the lab develops.
+More troubleshooting scenarios will be added as the lab develops
