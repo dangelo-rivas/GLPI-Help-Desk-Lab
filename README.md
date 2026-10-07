@@ -17,8 +17,6 @@ The environment simulates a small business where users submit IT support tickets
 
 ## Lab Architecture
 
-## Lab Architecture
-
 ```text
 ZimaOS
 ├── Ubuntu Server VM
