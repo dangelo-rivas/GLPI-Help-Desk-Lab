@@ -83,6 +83,16 @@ ZimaOS
 
 [View Ticket 04 Documentation](Ticket-04-Shared-Folder-Access/README.md)
 
+### Ticket 05 - Printer Troubleshooting
+
+**Issue:** User was unable to print documents using Microsoft Print to PDF and received Windows error 0x800706ba.
+
+**Diagnosis:** Investigated Windows printer configuration and services. Identified that the Print Spooler service was stopped, preventing printing functionality.
+
+**Resolution:** Restarted the Windows Print Spooler service, verified that it was running, and successfully generated and opened a test PDF using the affected standard user account.
+
+[View Ticket 05 Documentation](Ticket-05-Printer-Troubleshooting/README.md)
+
 ---
 
 More troubleshooting scenarios will be added as the lab develops.
