@@ -105,4 +105,51 @@ ZimaOS
 
 ---
 
-More troubleshooting scenarios will be added as the lab develops.
+## Project Outcomes
+
+Successfully built and administered a virtualized IT help desk environment using ZimaOS, Ubuntu Server, GLPI, and Windows 11 Pro.
+
+Configured automated endpoint inventory, simulated employee and technician accounts, and completed six hands-on troubleshooting scenarios covering common entry-level IT support responsibilities.
+
+### Key Accomplishments
+
+- **Help Desk Administration:** Configured GLPI ticket categories, user accounts, technician assignments, asset associations, and ticket resolution workflows.
+
+- **Endpoint Management:** Installed and configured GLPI Agent to automatically inventory a Windows 11 Pro workstation and associate it with support tickets.
+
+- **Network Troubleshooting:** Diagnosed DNS resolution failures and incorrect IPv4 configurations using `ipconfig`, `ping`, and `nslookup`.
+
+- **Windows Administration:** Performed local user password resets, managed standard-user permissions, and installed approved applications using administrator credentials.
+
+- **Access Management:** Troubleshot NTFS and network share permissions, restoring access while maintaining least-privilege security practices.
+
+- **Printer Troubleshooting:** Diagnosed a stopped Windows Print Spooler service and restored Microsoft Print to PDF functionality.
+
+- **Technical Documentation:** Recorded user-reported issues, troubleshooting steps, diagnostic findings, corrective actions, and resolution verification in GLPI and GitHub.
+
+### Completed Troubleshooting Scenarios
+
+| Ticket | Scenario | Skills Demonstrated |
+|---|---|---|
+| 01 | DNS Resolution Failure | DNS, TCP/IP, nslookup |
+| 02 | Application Installation | UAC, administrator permissions |
+| 03 | Windows Password Reset | Local account administration |
+| 04 | Shared Folder Access | NTFS, SMB, access permissions |
+| 05 | Printer Troubleshooting | Print Spooler, Windows Services |
+| 06 | DHCP/IP Configuration | DHCP, IPv4, network diagnostics |
+
+### Final Result
+
+**Completed six simulated IT support scenarios**, documenting each incident from initial report through investigation, remediation, verification, and ticket closure.
+
+This project demonstrates practical experience with:
+
+- Help desk ticket management
+- Windows 11 workstation support
+- Network connectivity troubleshooting
+- User account administration
+- Endpoint inventory and asset management
+- Access control and permissions
+- Technical documentation
+
+Each scenario includes troubleshooting notes and supporting screenshots that demonstrate the diagnostic process and verified resolution.
