@@ -93,6 +93,16 @@ ZimaOS
 
 [View Ticket 05 Documentation](Ticket-05-Printer-Troubleshooting/README.md)
 
+### Ticket 06 - DHCP/IP Configuration Troubleshooting
+
+**Issue:** User was unable to access network resources or the internal GLPI server from workstation ACME-PC-001.
+
+**Diagnosis:** Identified an incorrect static IPv4 address (192.168.50.10), subnet mismatch, and missing default gateway that prevented communication with the 10.0.0.0/24 network.
+
+**Resolution:** Restored automatic IP addressing through DHCP, verified the workstation received a valid network configuration, and confirmed connectivity to the gateway and GLPI server with 0% packet loss.
+
+[View Ticket 06 Documentation](Ticket-06-DHCP-IP-Troubleshooting/README.md)
+
 ---
 
 More troubleshooting scenarios will be added as the lab develops.
